@@ -2,7 +2,7 @@
 
 Atividades do terceiro bimestre.
 
-## Projetos
+## Projetos 
 
 - [Limiar Site] https://github.com/Miguel-de-Andrade/Limiar_Site.git
 
