@@ -97,15 +97,19 @@ public class Desafio_Matriz_5x5 {
             System.out.println();
         }
 
+        System.out.println("\n--------------------------------------");
+
         // Exibindo o resultado da subtração
 
         System.out.println("\nSubtração:");
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 5; j++) {
-                System.out.printf("%3f \t",subtracao[i][j]);
+                System.out.printf("%3d \t",subtracao[i][j]);
             }
             System.out.println();
         }
+
+        System.out.println("\n--------------------------------------");
 
         //Exibindo o resultado da divisão
 
