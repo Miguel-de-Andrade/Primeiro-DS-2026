@@ -1,7 +1,7 @@
 public class Desafio_Matriz_5x5 {
     public static void main(String[] args) {
 
-        //Declaração da Matriz A
+        //Declaração da Matriz A de tamanho 5x5
 
         int[][] A = {
                 {10, 4, 4 , 5 , 3 },
@@ -13,22 +13,22 @@ public class Desafio_Matriz_5x5 {
 
         };
 
-        //Declaração da matriz B
+        //Declaração da matriz B de tamanho 5x5
 
         int[][] B = {
-                {2 , 3, 4, 5, 7},
-                {14, 8, 7, 8, 9},
-                {2, 4, 8, 9, 12},
-                {2, 12, 4, 7, 9},
-                {22, 12, 8, 7, 5}
+                {2 , 3 , 4, 5, 7 },
+                {14, 8 , 7, 8, 9 },
+                {2 , 4 , 8, 9, 12},
+                {2 , 12, 4, 7, 9 },
+                {22, 12, 8, 7, 5 }
         };
 
         //Exibindo a Matriz A
 
         System.out.println("Matriz A: \n");
 
-        for (int i = 0; i < A.length; i++) {
-            for (int j = 0; j < A[i].length; j++) {
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 5; j++) {
                 System.out.print(A[i][j] + "\t");
             }
             System.out.println();
@@ -38,77 +38,80 @@ public class Desafio_Matriz_5x5 {
 
         System.out.println("\nMatriz B: \n");
 
-        for (int i = 0; i < B.length; i++) {
-            for (int j = 0; j < B[i].length; j++) {
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 5; j++) {
                 System.out.print(B[i][j] + "\t");
             }
             System.out.println();
         }
 
-        //Declarando as matrizes para armazenarem os resultados
+        //Declarando as matrizes soma, subtracao e divisao para armazenarem os resultados
 
-        int[][] soma = new int[A.length][A[0].length];
-        int[][] subtracao = new int[A.length][A[0].length];
-        int[][] divisao = new int[A.length][A[0].length];
+        int[][] soma = new int [5][5];
+        int[][] subtracao = new int [5][5];
+        double [][] divisao = new double [5][5];
 
-        //Calculando a soma
+        //Calculando a soma e a subtração no mesmo laço, percorrendo as linhas e colunas das matrizes
 
-        for (int i = 0; i < A.length; i++) {
-            for (int j = 0; j < A[i].length; j++) {
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 5; j++) {
                 soma[i][j] = A[i][j] + B[i][j];
-            }
-        }
-
-        //Calculando a subtração
-
-        for (int i = 0; i < A.length; i++) {
-            for (int j = 0; j < A[i].length; j++) {
                 subtracao[i][j] = A[i][j] - B[i][j];
             }
         }
 
-        //Calculando a divisão
 
-        for (int i = 0; i < A.length; i++) {
-            for (int j = 0; j < A[i].length; j++) {
+        //Calculando a divisão, percorrendo as linhas e colunas das matrizes
+
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 5; j++) {
 
                 // Verifica se o divisor é diferente de zero
                 if (B[i][j] != 0) {
 
                     // Realiza a divisão elemento por elemento
-                    divisao[i][j] = A[i][j] / B[i][j];
+                    divisao[i][j] = (double) A[i][j] / B[i][j];
 
                 } else {
 
-                    // Informa que não é possível dividir por zero — define como zero e continua
-                    System.out.println("Aviso: divisão por zero na posição [" + i + "][" + j + "], definindo 0.");
+                    // Informa que não é possível dividir por zero
+                    System.out.println("Aviso: divisão por zero na posição [" + i + "][" + j + "]");
                     divisao[i][j] = 0;
+
+                    return;
                 }
 
             }
 
         }
 
-        // Exibindo os resultados
-        System.out.println("\nSoma (A + B):");
-        for (int i = 0; i < soma.length; i++) {
-            for (int j = 0; j < soma[i].length; j++) {
+    System.out.println("\nResultados das operações entre as matrizes A e B:");
+
+        // Exibindo o resultado da soma:
+
+        System.out.println("\nSoma:");
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 5; j++) {
                 System.out.print(soma[i][j] + "\t");
             }
             System.out.println();
         }
 
-        System.out.println("\nSubtração (A - B):");
-        for (int i = 0; i < subtracao.length; i++) {
-            for (int j = 0; j < subtracao[i].length; j++) {
+        // Exibindo o resultado da subtração
+
+        System.out.println("\nSubtração:");
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 5; j++) {
                 System.out.print(subtracao[i][j] + "\t");
             }
             System.out.println();
         }
 
-        System.out.println("\nDivisão (A / B):");
-        for (int i = 0; i < divisao.length; i++) {
-            for (int j = 0; j < divisao[i].length; j++) {
+        //Exibindo o resultado da divisão
+
+        System.out.println("\nDivisão:");
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 5; j++) {
                 System.out.print(divisao[i][j] + "\t");
             }
             System.out.println();
