@@ -102,7 +102,7 @@ public class Desafio_Matriz_5x5 {
         System.out.println("\nSubtração:");
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 5; j++) {
-                System.out.print(subtracao[i][j] + "\t");
+                System.out.printf("%3f \t",subtracao[i][j]);
             }
             System.out.println();
         }
@@ -112,7 +112,7 @@ public class Desafio_Matriz_5x5 {
         System.out.println("\nDivisão:");
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 5; j++) {
-                System.out.print(divisao[i][j] + "\t");
+                System.out.printf( "%.2f \t", divisao[i][j]);
             }
             System.out.println();
         }
