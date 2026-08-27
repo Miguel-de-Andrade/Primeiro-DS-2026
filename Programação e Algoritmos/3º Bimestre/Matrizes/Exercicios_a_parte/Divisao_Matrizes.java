@@ -74,9 +74,5 @@ public class Divisao_Matrizes {
 
             System.out.println();
         }
-
-
-
-
     }
 }

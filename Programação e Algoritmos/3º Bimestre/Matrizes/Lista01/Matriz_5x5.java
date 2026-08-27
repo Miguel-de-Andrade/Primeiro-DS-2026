@@ -14,6 +14,7 @@ public class Matriz_5x5 {
         };
 
         //Declaração da matriz B 5x5
+
         int[][] B = {
                 {2 , 3 , 4, 5, 7 },
                 {14, 8 , 7, 9, 9 },
