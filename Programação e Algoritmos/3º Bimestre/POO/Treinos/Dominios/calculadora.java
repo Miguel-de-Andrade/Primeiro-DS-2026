@@ -1,6 +1,6 @@
-package Calculadora;
+package Treinos.Dominios;
 
-public class Calculadora {
+public class calculadora {
 
     public int soma(int a, int b){
         return a + b;

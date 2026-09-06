@@ -1,13 +1,13 @@
-package TesteCalculadora;
+package Treinos.Teste;
 
-import Calculadora.Calculadora;
+import Treinos.Dominios.calculadora;
 
 import java.util.Scanner;
 
 public class TesteCalculadora {
     public static void main(String[] args) {
 
-        Calculadora calculadora = new Calculadora();
+        calculadora calculadora = new calculadora();
 
         Scanner receber = new Scanner(System.in);
 
@@ -15,7 +15,7 @@ public class TesteCalculadora {
 
         System.out.println("Digite o valor do primeiro número:");
         int a = receber.nextInt();
-        System.out.println("Digite o valor do segundo número");
+        System.out.println("Digite o valor do segunc  do número");
         int b = receber.nextInt();
 
         System.out.println("Digite: \n 1 para somar \n 2 para subtrair \n 3 para dividir");
