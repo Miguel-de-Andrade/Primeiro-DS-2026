@@ -2,7 +2,7 @@ package Treinos.Teste;
 
 import Treinos.Dominios.Estudante;
 
-public class EstudanteTeste2 {
+public class TesteEstudante2 {
     public static void main(String[] args) {
 
         Estudante estudante1 = new Estudante();

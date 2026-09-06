@@ -1,13 +1,13 @@
 package Treinos.Teste;
 
-import Treinos.Dominios.calculadora;
+import Treinos.Dominios.Calculadora;
 
 import java.util.Scanner;
 
 public class TesteCalculadora {
     public static void main(String[] args) {
 
-        calculadora calculadora = new calculadora();
+        Calculadora calculadora = new Calculadora();
 
         Scanner receber = new Scanner(System.in);
 
